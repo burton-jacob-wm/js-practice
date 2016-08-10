@@ -53,6 +53,7 @@
 </html>
 -->
 
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,6 +69,240 @@
     </script>
 </head>
 <body>
+
+</body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Variables</title>
+    <script>
+        alert("Welcome.");
+        confirm("Continue?");
+        prompt("What is your name?");
+
+        var name = "Dave";
+
+        function myFunction() {
+            alert("Functions!")
+        }
+        myFunction();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Variables</title>
+    <script>
+        var math = prompt("Type in a problem", 0);
+
+        var total = eval(math);
+
+        confirm(total);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Variables</title>
+    <script>
+        var a = "DAVE";
+        var b = 1;
+        var c = true;
+        alert(a + " is type: " + typeof a + "\n\n" +
+        b +" is type: " + typeof b + "\n\n" +
+        c + " is type: " + typeof c);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <script>
+
+    </script>
+</head>
+<body onload="alert('hurray.');
+alert('yipee.');
+alert('hurrah.');">
+    <p>We did it.</p>
+</body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <script>
+        function myFunction(){
+            if (ageFunc() < 18){
+                alert("You aren't allowed on the page.")
+            }
+        }
+        function ageFunc(){
+            var age_text, age;
+            age_text = prompt("What is your age?");
+            age = parseInt(age_text);
+            return age;
+        }
+    </script>
+</head>
+<body onload="myFunction()" style="width: 1920px;height: 1080px">
+
+</body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+    <script>
+        alert("It's my " + buildGreat(1000) + "grandmother");
+
+        function buildGreat( depth ){
+            if(depth > 0){
+                return "great " + buildGreat(depth - 1);
+            }
+            else{
+                return "";
+            }
+        }
+    </script>
+</head>
+<body onload="myFunction()" style="width: 1920px;height: 1080px">
+
+</body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+    <script>
+        var username;
+        function name(){
+            username = prompt("What's your name?");
+            if (username == "Jacob"){
+                alert("Cool name!")
+            }
+            else if (username == "Sean"){
+                alert("Horrible name.");
+            }
+            else{
+                alert("Sick name.")
+            }
+        }
+    </script>
+</head>
+<body onclick="name()" style="width: 1920px;height: 1080px">
+
+</body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+    <script>
+        function name(){
+            var username = prompt("What's your name?");
+            switch (username){
+                case "Jacob":
+                    alert("Nice name.");
+                    break;
+                case "Sean":
+                    alert("Horrible name.");
+                    break;
+                default:
+                    alert("Sick name.");
+                    break;
+            }
+        }
+    </script>
+</head>
+<body onclick="name()" style="width: 1920px;height: 1080px">
+
+</body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loops</title>
+    <script>
+        var clicks = 1;
+        function loops(){
+            alert("You clicked...");
+            clicks++;
+            var i = clicks;
+            var b = 0;
+            while (i > 1){
+                i--;
+                b++;
+                alert(b);
+
+            }
+            alert(b + " time(s).");
+        }
+    </script>
+</head>
+<body onclick="loops()" style="width: 1920px;height: 1080px">
+
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math</title>
+    <script src="game.js"></script>
+</head>
+<body onload="game();">
 
 </body>
 </html>
