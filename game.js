@@ -32,34 +32,30 @@ function game(){
         var user_input_text = prompt("What is your guess? \n\n ["+ min_number +"-"+ max_number +"]");
         var user_input = parseInt(user_input_text);
         guess_count++;
-        function check(){
-            if (isNaN(user_input)){
-                alert("Not a Number.");
+        if (isNaN(user_input)) {
+            alert("Not a Number.");
+        }
+        else{
+            if (user_input == target_number){
+                alert("You win.");
+                if (guess_count == 1){
+                    alert("It took you " + guess_count + " guess.");
+                }
+                else{
+                    alert("It took you " + guess_count + " guesses.");
+                }
+                game_running = false;
             }
-            else{
-                if (user_input == target_number){
-                    alert("You win.");
-                    if (guess_count == 1){
-                        alert("It took you " + guess_count + " guess.");
-                    }
-                    else{
-                        alert("It took you " + guess_count + " guesses.");
-                    }
-                    game_running = false;
-                }
-                else if (user_input < target_number){
-                    alert("Guess higher.");
+            else if (user_input < target_number){
+                alert("Guess higher.");
 
-                    changeMinMax();
-                }
-                else if (user_input > target_number){
-                    alert("Guess lower.");
+                changeMinMax();
+            }
+            else if (user_input > target_number){
+                alert("Guess lower.");
 
-                    changeMinMax();
-                }
+                changeMinMax();
             }
         }
-        
-        check();
     }
 }
