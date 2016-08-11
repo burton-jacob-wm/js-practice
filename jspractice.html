@@ -295,6 +295,62 @@ alert('hurrah.');">
 </html>
 -->
 
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math</title>
+    <script>
+        var input_num_Children = [1,2,3,4,5];
+        var input_partner_name = ["Dave","Emma","Michael","no one"];
+        var input_geo_location = ["Alaska","New York","London","Paris"];
+        var input_job_title = ["CEO","VP","Office Drone","Hobo"];
+
+        var num_children = input_num_Children[ Math.floor(Math.random() * input_num_Children.length)];
+        var partner_name = input_partner_name[ Math.floor(Math.random() * input_partner_name.length)];
+        var geo_location = input_geo_location[ Math.floor(Math.random() * input_geo_location.length)];
+        var job_title = input_job_title[Math.floor(Math.random() * input_job_title.length)];
+
+        function tellFortune(){
+            if(confirm("Read your fortune?")){
+                var lucky_number = parseInt(prompt("Pick a lucky number. \n\n 1-5"));
+                switch(lucky_number){
+                    case 1:
+                        num_children = 1;
+                        break;
+                    case 2:
+                        num_children = 2;
+                        break;
+                    case 3:
+                        num_children = 3;
+                        break;
+                    case 4:
+                        num_children = 4;
+                        break;
+                    default:
+                }
+                if(num_children == 1){
+                    alert("You will be a "+ job_title +" in "+ geo_location +", " +
+                            "and married to "+ partner_name +" with "+ num_children +" kid.");
+                }
+                else{
+                    alert("You will be a "+ job_title +" in "+ geo_location +", " +
+                            "and married to "+ partner_name +" with "+ num_children +" kids.");
+                }
+            }
+        }
+
+        tellFortune();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
